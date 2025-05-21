@@ -3,6 +3,12 @@
   padding: 0;
 }
 
+:root {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 body {
   background-color: #F5F4F0;
 }
@@ -10,7 +16,7 @@ body {
 #page {
   box-sizing: border-box;
   width: 1120px;
-  margin: 88px auto;
+  margin: 88px auto 65px;
 }
 
 .subtitulo {
@@ -30,28 +36,88 @@ body {
   margin-top: 24px;  
 }
 
+h1 {
+  font-size: 36px;
+  line-height: 49px;
+  margin-bottom: 40px;
+  margin-top: 8px;
+}
+
 img {
   border-radius: 28px;
+  object-fit: cover;
   width: 100%;
 }
 
 .divider {
   width: 100%;
   height: 1px;
-  margin: 36px 0;
+  margin: 40px 0;
   background-color: #d9d9d9;
 }
 
 section img {
   height: 375px;
-  object-fit: cover; /* Ajusta a proporção da imagem para caber no container disponível pra ela sem distorcer */
-  margin-top: 44px;
+  margin-top: 48px;
 }
 
 h1 img {
   height: 660px;
 }
 
+h2 {
+  margin-top: 2px;
+  margin-bottom: 8px;
+}
+
+h3 {  
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+
+ol {  
+  margin-top: 16px;
+}
+
+ol li {
+  margin-left: 20px;
+}
+
 ul li::marker {
   color: #333333;
+}
+
+#azul li {
+  color: blue;
+}
+
+.lista {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+ul li {  
+  list-style: disc;
+  color: purple;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 22px;
+}
+
+ul li + li {
+  color: pink;
+}
+
+ul li + li + li {
+  color: orange;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+footer img {
+  vertical-align: middle;
+  width: 16px;
 }
